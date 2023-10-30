@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+
+<html lang="">
+
+<head>
+<title>NIFA</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
+
+
+
+
+     
+<header>
+
+  
+  <div class="header-2">
+
+      <div id="menu" class="fas fa-bars" onclick="navToggle();"></div>
+
+      <nav class="navbar">
+          <ul>
+              <li><a onclick="navToggle();" href="#">Welcome to the National Institute of Fine Arts
+              </a></li> 
+              <li><a onclick="navToggle();" href="#"></a></li>
+              <li><a onclick="navToggle();" href="#"></a></li>
+              <li><a onclick="navToggle();" href="#"></a></li>
+              <li><a onclick="navToggle();" href="#"></a></li>
+
+              
+              <li style="font-size: 15px; color: white;"><a onclick="navToggle();" href="#"> <a class="fa fa-phone"></a> 9555112200</a></li>
+              <li><a onclick="navToggle();" href="#"></a></li>
+              <li><a onclick="navToggle();" href="#"></a></li>
+
+              <li style="font-size: 15px; color: white;"><a onclick="navToggle();" href="#"> <a class="fa fa-phone"></a> 9555112200</a></li>
+
+              <li style="font-size: 15px; color: white;"><a onclick="navToggle();" href="#"> <a class="fa fa-envelope"></a> admission@nifafinearts.com</a></li>
+          </ul>
+      </nav>
+
+      <div class="icons">
+          <a href="#" class="fab fa-facebook-f"></a>
+          <a href="#" class="fab fa-twitter"></a>
+          <a href="#" class="fab fa-instagram"></a>
+          <a href="#" class="fab fa-youtube"></a>
+      </div>
+
+  </div>
+
+</header>
+
+<div class="content"></div>
+
+
+<div class="wrapper row1">
+  <header id="header" class="hoc clear">
+    <div id="logo" class="fl_left"> 
+      <!-- ################################################################################################ -->
+      <h1 class="logoname"><a href="index.html">NI<span>F</span>A</a></h1>
+      <!-- ################################################################################################ -->
+    </div>
+    <nav id="mainav" class="fl_right"> 
+      <!-- ################################################################################################ -->
+      <ul class="clear">
+        <li class="active"><a href="index.html" style="color: black;">Home</a></li>
+        <li><a class="drop" href="#">About</a>
+          <ul>
+            <li><a href="pages/gallery.html">Facilities</a></li>
+           
+          </ul>
+        </li>
+        <li><a class="drop" href="#">Courses</a>
+          <ul>
+            <li><a href="pages/gallery.html">Java</a></li>
+            <li><a href="pages/full-width.html">Html</a></li>
+            <li><a href="pages/sidebar-left.html"> Css</a></li>
+            <li><a href="pages/sidebar-right.html">Js</a></li>
+            <li><a href="pages/basic-grid.html">ReactJs</a></li>
+            <li><a href="pages/font-icons.html">NodeJs</a></li>
+          </ul>
+        </li>
+        <li><a class="drop" href="#">Activities</a>
+          <ul>
+            <li><a href="pages/gallery.html">Gallery</a></li>
+            <li><a href="pages/full-width.html">Full Width</a></li>
+            <li><a href="pages/sidebar-left.html">Sidebar Left</a></li>
+            <li><a href="pages/sidebar-right.html">Sidebar Right</a></li>
+            <li><a href="pages/basic-grid.html">Basic Grid</a></li>
+            <li><a href="pages/font-icons.html">Font Icons</a></li>
+            <li><a href="pages/font-icons.html">Font Icons</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Admission</a></li>
+
+        <li><a class="drop" href="#">Art Gallery</a>
+          <ul>
+            <li><a href="pages/gallery.html">Gallery</a></li>
+            <li><a href="pages/full-width.html">Full Width</a></li>
+            <li><a href="pages/sidebar-left.html">Sidebar Left</a></li>
+            <li><a href="pages/sidebar-right.html">Sidebar Right</a></li>
+           
+          </ul>
+        </li>
+        <li><a href="#">franchise</a></li>
+        <li><a href="#">Online Classes</a></li>
+        <li><a href="#">Videos</a></li>
+        <li><a href="#">Pay Fee</a></li>
+        <li><a href="#">Contact</a></li>
+    </nav>
+  </header>
+</div>
+
+<div class="wrap">
+  <div id="arrow-left" class="arrow"></div>
+  <div id="slider">
+    <div class="slide slide1">
+      <div class="slide-content">
+        <!-- <span>Image One</span> -->
+      </div>
+    </div>
+    <div class="slide slide2">
+      <div class="slide-content">
+        <!-- <span>Image Two</span> -->
+      </div>
+    </div>
+    <div class="slide slide3">
+      <div class="slide-content">
+        <!-- <span>Image Three</span> -->
+      </div>
+    </div>
+  </div>
+  <div id="arrow-right" class="arrow"></div>
+</div>
+
+
+<style>
+  body,
+#slider,
+.wrap,
+.slide-content {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.wrap {
+  position: relative;
+}
+
+.slide {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slide1 {
+background-image: url(img1.png);
+}
+.slide2 {
+  background-image: url(img2.png);
+}
+.slide3 {
+  background-image: url(img3.png);
+}
+
+.slide-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.slide-content span {
+  font-size: 5rem;
+  color: #fff;
+}
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -35px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+#arrow-left {
+  border-width: 20px 30px 20px 0;
+  border-color: transparent #fff transparent transparent; background-color: black;
+  left: 0;
+  margin-left: 10px;
+}
+
+#arrow-right {
+  border-width: 20px 0 20px 30px;
+  border-color: transparent transparent transparent #fff; background-color: black;
+  right: 0;
+  margin-right: 10px;
+}
+
+
+</style>
+
+<div class="container1 scroll-right1">
+  <span>Nifa Updates::</span>
+  <marquee behavior="" direction="left" style="color: rgb(236, 40, 236); font-size: 15px;"> <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eum quia error placeat recusandae hic, nostrum doloremque nihil ducimus repellendus ea eius architecto doloribus sed.</b></marquee>
+</div>
+<br><br><br>
+
+
+
+<h1 style="background-color: white; color: black; text-align: center; font-weight: bold; font-size: 30px;">Welcome To National Institute of Fine Arts</h1>
+<p style="background-color: white; color: black; text-align: center; font-size: 15px;">National Institute of Fine Arts (NIFA) is a national center for education in arts, fostering the excellence of emerging and established artists and <br>
+  advancing art to create a more human world. National Institute of Fine Arts  (NIFA) was established by MRS RENU KHERA in Delhi and NCR of <br>
+  Delhi on July 2005. Institute established another unit in Panna (M.P) which is affiliated to Raja Mansingh Music and Arts University (Gwalior). Its <br>
+  aim is to provide education and training to students on a wide spectrum of Fine Arts. <br>
+
+  National Institute of Fine Arts is a place where the creative expression of individuals is nurtured and a sense of community flourishes. We seek to <br>
+  
+  shape the global future of arts with an emphasis on excellence that allows its members to reach for the highest artistic standards as individuals <br>
+  
+  while recognizing that the Art is one of the foundations of a healthy and creative society. This is a place where national and international leaders <br>
+  
+  in the arts gather, teach, show and perform their work. The institute prides itself on its openness and on creating an environment that is safe, <br>
+   welcoming, and built on mutual respect. <br></p>
+  <p style="text-align: center; font-size: 15px;"><b> National Institute of Fine Arts is a place where the creative expression of individuals is nurtured and a sense of community flourishes.</b></p>
+
+ 
+  <div class="buttons-container1">
+    <button class="button-arounder1" style="border-radius: 39px;">Read More</button>
+  </div>
+<br><br>
+ 
+
+<div class="container2"> 
+  <div class="background"></div>
+  <div class="content">
+    <div class="left-section">
+      <h2 style="font-size: 30px; font-weight: bolder;">Online Classes</h2>
+      <p>
+        Dear Students/Parents, Nifa presents its Learning App <br> for your regular art practice in which we have added <br> many amazing features Like: Step-by-step recorded  <br> demo videos prepared by your faculty members. <br> Regular assessment of your practise through <br> assignment section. Live class section from same app. <br> Attendance, payment invoice, art news, <br>announcements, important information and direct <br> connect with the management team are some more <br> features. So hurry up n join now to experience <br> personalised coaching by experts sitting at your home. <br>
+
+        We wish u Happy Learning. Stay Safe n Healthy.
+      </p>
+      <div class="logos">
+        <img src="logo1.jpg" alt="Logo 1">
+        <img src="logo2.png" alt="Logo 2">
+         <div class="buttons-container1">
+    <button class="button-arounder1" style="border-radius: 20px; background-color: darkslateblue;">Read More</button>
+  </div>
+      </div>
+    </div>
+    <div class="right-section">
+      <div class="video-frame">
+        <iframe width="614" height="367" src="https://www.youtube.com/embed/-9cJjaLXKqE" title="NIFA ( Best Art Institute )" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        
+      </div>
+    </div>
+
+    
+  </div>
+  
+</div>
+
+
+<style>
+  .container2 {
+    background-image: url(bgimage.png);
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background {
+  
+ /* Replace 'your-background-image.jpg' with your image file */
+  background-size: cover;
+  /* background-position: center; */
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: auto;
+}
+
+.left-section, .right-section {
+  flex: 1;
+}
+
+.left-section {
+  text-align: center;
+  padding: 20px;
+  color: rgb(0, 0, 0);
+}
+
+.right-section {
+  height: 483px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-frame {
+  position: relative;
+  width: 80%;
+  height: 80%; /* Adjust width as needed */
+}
+
+.video-frame iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border: 10px solid white;
+}
+</style>
+
+<div class="wrapper row3">
+  <main class="hoc container clear"> 
+    
+    <div class="clear"></div>
+  </main>
+</div>
+
+<div class="bgded overlay light" style="background-image:url('bgadd.jpg');">
+  <section id="services" class="hoc container clear"> 
+    
+    <div class="sectiontitle">
+      <!-- <p class="nospace font-xs">Quis leo hendrerit lectus morbi</p> -->
+      <h6 class="heading font-x2">OUR COURSES</h6>
+    </div>
+    <ul class="nospace group elements elements-three">
+      <li class="one_third">
+        <article><a href="#"><img src="cimg1.jpg" alt=""></a>
+          <h6 class="heading">Sociis natoque penatibus</h6>
+          <p>Interdum at congue semper purus nullam quis odio id justo accumsan ullamcorper maecenas vel arcu nulla tincidunt elit ornare.</p>
+
+
+
+          <style></style>
+        </article>
+      </li>
+      <li class="one_third">
+        <article><a href="#"><img src="cimg2.jpg" alt=""></a>
+          <h6 class="heading">Magnis parturient montes</h6>
+          <p>Urna proin venenatis eros viverra ultrices fringilla lectus urna consequat erat eget scelerisque ligula felis nec neque nam.</p>
+        </article>
+      </li>
+      <li class="one_third">
+        <article><a href="#"><img src="cimg3.jpg" alt=""></a>
+          <h6 class="heading">Nascetur ridiculus aenean</h6>
+          <p>Vitae ipsum vitae velit porttitor aliquam in quam aliquam ullamcorper sem a auctor dapibus nisi nunc vehicula nunc quis mattis.</p>
+        </article>
+      </li>
+      <li class="one_third">
+        <article><a href="#"><img src="cimg4.jpg" alt=""></a>
+          <h6 class="heading">Ullamcorper neque phasellus</h6>
+          <p>Pede turpis at elit nunc at urna sed ligula vivamus vel erat at diam imperdiet pharetra quisque justo turpis mattis ut vitae.</p>
+        </article>
+      </li>
+      <li class="one_third">
+        <article><a href="#"><img src="cimg5.jpg" alt=""></a>
+          <h6 class="heading">Aliquet lacus nulla erat</h6>
+          <p>Tortor aenean leo ipsum elementum non cursus eu interdum ut risus proin risus nibh viverra eget lobortis feugiat egestas in nisl.</p>
+        </article>
+      </li>
+      <li class="one_third">
+        <article><a href="#"><img src="cimg6.jpg" alt=""></i></a>
+          <h6 class="heading">Aliquam volutpat curabitur</h6>
+          <p>Fusce dignissim neque vitae justo aenean ac urna et leo posuere pretium nunc bibendum enim quis imperdiet elementum dui dolor.</p>
+        </article>
+      </li>
+      <li class="one_third">
+        <article><a href="#"><img src="cimg7.jpg" alt=""></a>
+          <h6 class="heading">Magnis parturient montes</h6>
+          <p>Urna proin venenatis eros viverra ultrices fringilla lectus urna consequat erat eget scelerisque ligula felis nec neque nam.</p>
+        </article>
+      </li>
+      <li class="one_third">
+        <article><a href="#"><img src="cimg8.jpg" alt=""></a>
+          <h6 class="heading">Magnis parturient montes</h6>
+          <p>Urna proin venenatis eros viverra ultrices fringilla lectus urna consequat erat eget scelerisque ligula felis nec neque nam.</p>
+        </article>
+      </li>
+      <li class="one_third">
+        <article><a href="#"><img src="cimg9.jpg" alt=""></a>
+          <h6 class="heading">Magnis parturient montes</h6>
+          <p>Urna proin venenatis eros viverra ultrices fringilla lectus urna consequat erat eget scelerisque ligula felis nec neque nam.</p>
+        </article>
+      </li>
+      <li class="one_third">
+        <article><a href="#"><img src="cimg10.jpg" alt=""></a>
+          <h6 class="heading">Magnis parturient montes</h6>
+          <p>Urna proin venenatis eros viverra ultrices fringilla lectus urna consequat erat eget scelerisque ligula felis nec neque nam.</p>
+        </article>
+      </li>
+      <li class="one_third">
+        <article><a href="#"><img src="cimg11.jpg" alt=""></a>
+          <h6 class="heading">Magnis parturient montes</h6>
+          <p>Urna proin venenatis eros viverra ultrices fringilla lectus urna consequat erat eget scelerisque ligula felis nec neque nam.</p>
+        </article>
+      </li>
+      <li class="one_third">
+        <article><a href="#"><img src="cimg12.jpg" alt=""></a>
+          <h6 class="heading">Magnis parturient montes</h6>
+          <p>Urna proin venenatis eros viverra ultrices fringilla lectus urna consequat erat eget scelerisque ligula felis nec neque nam.</p>
+        </article>
+      </li>
+
+    </ul>
+    
+  </section>
+</div>
+
+
+
+<div class="gallery_1" unique-script-id="w-w-dm-id">
+  <div class="responsive-container-block bigContainer">
+    <div class="responsive-container-block Container">
+      <p class="text-blk heading">
+        Students Work
+      </p>
+     
+      <div class="responsive-container-block imgContainer">
+        <div class="project project1">
+          <img class="smallImage" src="dimg1.jpg">
+          <div class="overlay">
+            <div class="overlay-inner">
+              <button class="close">
+                Close X
+              </button>
+              <div class="hdImgs">
+                <img class="squareImg" src="dimg1.jpg">
+              </div>
+            </div>
+          </div>
+          <div class="btn-box">
+            <button class="btn">
+              View
+            </button>
+          </div>
+        </div>
+        <div class="project project2">
+          <img class="smallImage" src="dimg6.jpg">
+          <div class="overlay">
+            <div class="overlay-inner">
+              <button class="close">
+                Close X
+              </button>
+              <div class="hdImgs">
+                <img class="squareImg" src="dimg6.jpg">
+              </div>
+            </div>
+          </div>
+          <div class="btn-box">
+            <button class="btn">
+              View
+            </button>
+          </div>
+        </div>
+        <div class="project project3">
+          <img class="smallImage" src="dimg3.jpg">
+          <div class="overlay">
+            <div class="overlay-inner">
+              <button class="close">
+                Close X
+              </button>
+              <div class="hdImgs">
+                <img class="squareImg" src="dimg3.jpg">
+              </div>
+            </div>
+          </div>
+          <div class="btn-box">
+            <button class="btn">
+              View
+            </button>
+          </div>
+        </div>
+        <div class="project project4">
+          <img class="smallImage" src="dimg7.jpg">
+          <div class="overlay">
+            <div class="overlay-inner">
+              <button class="close">
+                Close X
+              </button>
+              <div class="hdImgs">
+                <img class="squareImg" src="dimg7.jpg">
+              </div>
+            </div>
+          </div>
+          <div class="btn-box">
+            <button class="btn">
+              View
+            </button>
+          </div>
+          
+        </div>
+        <div class="project project5">
+          <img class="smallImage" src="dimg5.jpg">
+          <div class="overlay">
+            <div class="overlay-inner">
+              <button class="close">
+                Close X
+              </button>
+              <div class="hdImgs">
+                <img class="squareImg" src="dimg5.jpg">
+              </div>
+            </div>
+          </div>
+          <div class="btn-box">
+            <button class="btn">
+              View
+            </button>
+          </div>
+        </div>
+        <div class="project project6">
+          <img class="smallImage" src="dimg11.png">
+          <div class="overlay">
+            <div class="overlay-inner">
+              <button class="close">
+                Close X
+              </button>
+              <div class="hdImgs">
+                <img class="squareImg" src="dimg11.png">
+              </div>
+            </div>
+          </div>
+          <div class="btn-box">
+            <button class="btn">
+              View
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="wrapper gradient" style="background-image: url(bg2.jpg);">
+  <div class="hoc container clear"> 
+    
+    <div class="sectiontitle" >
+      
+      <h6 class="heading font-x2" style="color: white;">Student's Testimonial</h6>
+    </div>
+    <ul class="nospace group team">
+      <li class="one_third first">
+        <iframe width="350" height="202" src="https://www.youtube.com/embed/VrGcY2k5zuc" title="Testimonial by NIFA’s student" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" style="border: 12px solid rgb(255, 255, 255);" allowfullscreen></iframe>
+      </li>
+      <li class="one_third">
+        <iframe width="350" height="202" src="https://www.youtube.com/embed/EnYCmNGoySc" title="Testimonial by NIFA&#39;s student" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" style="border: 12px solid rgb(255, 255, 255);"  allowfullscreen></iframe>
+      </li>
+      <li class="one_third">
+        <iframe width="350" height="202" src="https://www.youtube.com/embed/iX6KgBTH__E" title="testimonial by NIFA&#39;s student" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" style="border: 12px solid rgb(255, 255, 255);"  allowfullscreen></iframe>
+      </li>
+      
+    </ul>
+
+    <ul class="nospace group team">
+      <li class="one_third first">
+        <iframe width="350" height="202" src="https://www.youtube.com/embed/hvjJv1zVl2k" title="testimonial by NIFA&#39;s student" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" style="border: 12px solid rgb(255, 255, 255);"  allowfullscreen></iframe>
+      </li>
+      <li class="one_third">
+        <iframe width="350" height="202" src="https://www.youtube.com/embed/GfialCtEAYk" title="Testimonial by NIFA’s student." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" style="border: 12px solid rgb(255, 255, 255);"  allowfullscreen></iframe>
+      </li>
+      <li class="one_third">
+        <iframe width="350" height="202" src="https://www.youtube.com/embed/S5AUDt6999o" title="Testimonial BY NIFA’s student" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" style="border: 12px solid rgb(255, 255, 255);"  allowfullscreen></iframe>
+      </li>
+      
+    </ul>
+    
+  </div>
+</div>
+
+<div class="bgded overlay row4" style="background-image:url('footerbg.jpg');">
+  <footer id="footer" class="hoc clear"> 
+    
+    <div class="one_quarter first">
+      <!-- <h1 class="logoname"><a href="index.html">NI<span>F</span>A</a></h1> -->
+      <h1>COMPANY</h1>
+      <ul class="nospace linklist">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Facilities</a></li>
+        <li><a href="#">Career</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Refund Policy</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+     
+    </div>
+    <div class="one_quarter">
+      <h6 class="heading">Activities</h6>
+      <ul class="nospace linklist">
+        <li><a href="#">Art Gallery</a></li>
+        <li><a href="#">Workshops</a></li>
+        <li><a href="#">Outdoor Activities</a></li>
+        <li><a href="#">Media Coverage</a></li>
+        <li><a href="#">Art Events</a></li>
+        <li><a href="#">Exhibition</a></li>
+        <li><a href="#">Daily Activities</a></li>
+      </ul>
+    </div>
+
+    <div class="one_quarter">
+      <h6 class="heading">Popular Course</h6>
+      <ul class="nospace linklist">
+        <li><a href="#">Diploma In Fine Arts</a></li>
+        <li><a href="#">Certificate Hobby Course</a></li>
+        <li><a href="#">Entrance Preparation</a></li>
+        <li><a href="#">BFA</a></li>
+        <li><a href="#">Animation Sketching </a></li>
+        <li><a href="#">Kids Diploma</a></li>
+      </ul>
+    </div>
+
+
+    
+    
+    <div class="one_quarter">
+      <h6 class="heading">Our Locations</h6>
+      <ul class="nospace linklist">
+        <li>
+          <article>
+            <p class="nospace btmspace-10"><a href="#">Gurgaon (Dlf Phase - 4)
+              Mumbai (Andheri West)
+              South Delhi (Kailash Colony).</a></p>
+            <h6>International Branches</h6>
+          </article>
+        </li>
+        <li>
+          <article>
+            <!-- <p class="nospace btmspace-10"><a href="#">International Branches</a></p> -->
+            <li><a href="#">London</a></li>
+        <li><a href="#">USA </a></li>
+        <li><a href="#">Dubai, UAE</a></li>
+          </article>
+        </li>
+      </ul>
+    </div>
+
+    <div class="one_quarter first">
+     
+      <p><b>NIFA Is A Unit Of Nifaedutech Pvt Ltd.
+
+        Connect With Us</b></p>
+        <p>9555112200,9810130552</p>
+        <p>admission@nifafinearts.com</p>
+      <ul class="faico clear" style="color: white; border-radius: 80px;">
+        <li><a class="faicon-facebook" href="#"><i class="fab fa-facebook"></i></a></li>
+        <li><a class="faicon-google-plus" href="#"><i class="fab fa-google-plus-g"></i></a></li>
+        <li><a class="faicon-linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>
+        <li><a class="faicon-twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a class="faicon-vk" href="#"><i class="fab fa-vk"></i></a></li>
+      </ul>
+    </div>
+    
+
+    <ul">
+      <div style="justify-content: space-between; " >
+      <li><a class="faicon-facebook" href="#"><img src="play1.jpg" alt=""></a></li>
+      <li><a class="faicon-google-plus" href="#"><img src="play2.jpg" alt=""></a></li>
+      
+    </ul></div>
+
+
+  </footer>
+</div>
+
+<div class="wrapper row5">
+  <div id="copyright" class="hoc clear"> 
+  
+    <p class="fl_left">Copyright &copy; 2021 - NIFA Fine Arts. Rights Reserved - <a href="#"></a></p>
+   
+  </div>
+</div>
+<a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="layout/scripts/jquery.min.js"></script>
+<script src="layout/scripts/jquery.backtotop.js"></script>
+<script src="layout/scripts/jquery.mobilemenu.js"></script>
+<!-- Homepage specific -->
+<script src="layout/scripts/jquery.easypiechart.min.js"></script>
+<!-- / Homepage specific -->
+</body>
+</html>
